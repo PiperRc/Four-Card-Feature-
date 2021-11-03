@@ -7,121 +7,72 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Four card feature section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-  <link rel="stylesheet" href="index.css">
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
 </head>
-
-
 
 <body>
 
+  <div class="container">
 
-  <section class="reliable">
-
-    <div>
-
-      <section class="header">
-        <p id="first-p">Reliable, efficient delivery</p>
-        <p id="second-p">Powered by Technology</p>
-      </section>
-
-
-      <p id="third-p">Our Artificial Intelligence powered tools
-       use millions of project data <span>points to
-          ensure that your project is successful</span></p>
-
+    <div class="header">
+      <p>Reliable, efficient delivery<p>
+          <p>Powered by Technology</p>
     </div>
-  </section>
+
+    <div class="description-text">
+      <p> <span>Our Artificial Intelligence powered tools</span><span>use millions of project data points
+          to</span> <span>ensure that your project is successful</span></p>
+    </div>
 
 
-  <section class="supervisor">
-
-    <div>
+<div class="boxes">
+    <div class="supervisor box">
       <h3>Supervisor</h3>
-      <p>Monitors activity to identify project roadblocks</p>
+      <p>Monitors activity to identify project<span>roadblocks</span> </p>
+      <img src="images/icon-supervisor.svg" alt="magnifying glass">
     </div>
 
-    <img src="images/icon-supervisor.svg" alt="">
-
-  </section>
-
-
-
-
-  <section class="teambuilder">
-
-    <div>
+    <div class="team-builder box">
       <h3>Team Builder</h3>
-      <p>Scans our talent network to create the optimal team for your project</p>
+      <p>Scans our talent network to create the <span>optimal team for your project</span></p>
+      <img src="images/icon-team-builder.svg" alt="house icon">
     </div>
 
-    <img src="images/icon-team-builder.svg" alt="">
-  </section>
 
-
-
-
-
-
-
-
-
-
-  <section class="karma">
-
-    <div>
+    <div class="karma box">
       <h3>Karma</h3>
-      <p>Regularly evaluates our talent to ensure quality</p>
+      <p> Regularly evaluates our talent to<span>ensure quality</span></p>
+      <img src="images/icon-karma.svg" alt="lightbulb">
+
     </div>
 
-    <img src="images/icon-karma.svg" alt="">
-  </section>
 
-
-
-
-
-
-
-  <section class="calculator">
-
-    <div>
+    <div class="calculator box">
       <h3>Calculator</h3>
-      <p>Uses data from past projects to provide better delivery estimates</p>
+      <p>Uses data from past projects to <span>provide better delivery estimates</span></p>
+      <img src="images/icon-calculator.svg" alt="televison">
+
     </div>
+  </div>
 
-    <img src="images/icon-calculator.svg" alt="">
-  </section>
+  </div>
 
-
-
-  <!--
-  <footer>
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
-
-
 </body>
-
 
 </html>
