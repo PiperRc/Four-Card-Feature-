@@ -27,7 +27,7 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
-![Screenshot](https://github.com/PiperRc/Four-Card-Feature-/blob/main/images/preview.png)
+![Screenshot](https://github.com/PiperRc/Four-Card-Feature-/blob/main/desktop%20screenshot.png)
 
 ### Links
 
@@ -45,10 +45,11 @@ Users should be able to:
 
 ### What I learned
 
-
+-The importance of max-width.
+-Importance of css inheritance
 ### Continued development
 
-Margin and Position
+-Css inheritance
 
 ### Useful resources
 
