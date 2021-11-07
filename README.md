@@ -45,8 +45,11 @@ Users should be able to:
 
 ### What I learned
 
--The importance of max-width.
--Importance of css inheritance
+- The importance of max-width.
+- Importance of css inheritance
+- This is my second attempt at this challenge. I fixed the white space issue causing the boxes to not be centered.  I am definitely getting more comfortable with html and css. 
+
+- There are still aspects of css still confuse me however.  I realize that the way  I think css is suppose to work at times is not how - css actually works. I need to work on that.
 ### Continued development
 
 -Css inheritance
