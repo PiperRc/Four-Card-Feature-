@@ -21,83 +21,86 @@ html {
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
     width: 90%;
-    max-width:600px;
-   
-    padding-top: 3rem;
-
-    /* border:1px solid grey; */
+    max-width: 600px;
 }
 
 .header p {
     text-align: center;
 }
 
-/* change line-1 and line-2 to nth child */
-.header:nth-child(1) {
-    font-size: 1.59rem;
+#header-line-1 {
+    font-size: 1.5333rem;
     font-weight: 200;
 }
 
-
-.header:nth-child(2) {
-    font-size: 1.69rem;
-
+#header-line-2 {
+    font-size: 1.55rem;
+    font-weight: 600;
 }
 
 .header {
-    margin-top:2rem;
-    margin-bottom: 1rem;
+    margin: 5rem 0 1rem 0;
 }
 
 .description-text span {
-    font-size: 1rem;
     display: block;
     text-align: center;
-    font-weight: 200;
     padding-right: 2px;
-
 }
 
 .description-text {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: var(--grayblue);
 }
 
-/* .boxes{
-    display:flex;
-    flex-direction: column;
-    
-} */
-
-
-
-.boxes{
+.boxes {
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
-    
+}
+
 .box {
-    width: 95%;
-    border: 1px solid greenyellow;
+    width: 90%;
     padding-bottom: 2rem;
     margin-bottom: 1.5rem;
- 
-   
-  
-
+    border: 3px solid var(--vlightgray);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 3px 6px 5px var(--grayblue)
 }
+
+.middle-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle-boxes {
+    width: 100%;
+}
+
+/* try to understand this ^^^^above */
 
 .box span {
     display: block;
 }
 
+.box h3 {
+    padding-top: 1rem;
+}
+
 .box p {
     font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--grayblue);
 }
 
 .box h3,
@@ -105,21 +108,83 @@ body {
     padding-left: 1.8rem;
 }
 
-.box h3{
-    padding-top:1rem;
-}
-/* .box img{
-    padding-top:2rem;
-    padding-left: 17rem;
-} */
-
-.box img{
+.box img {
     float: right;
-    padding-right:3rem;
-    padding-top:1.4rem;
-   
+    padding-right: 1.5rem;
+    padding-top: 1.4rem;
 }
 
-.calculator{
+.supervisor {
+    border-top: 5px solid var(--cyan);
+}
+
+.team-builder {
+    border-top: 5px solid var(--red);
+}
+
+.karma {
+    border-top: 5px solid var(--orange);
+}
+
+.calculator {
+    border-top: 5px solid var(--blue);
     margin-bottom: 3rem;
+}
+
+
+footer p {
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width:900px) {
+
+    .header {
+        margin-top: 1.5rem;
+    }
+
+    #header-line-1 {
+        font-size: 2rem;
+    }
+
+    #header-line-2 {
+        font-size: 2rem;
+    }
+
+    .description-text span {
+        display: inline;
+    }
+
+    .description-text {
+        width: 33rem;
+        text-align: center;
+    }
+
+    .description-text-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* 
+    .description-text-container{
+        text-align:center;
+    }
+    why doesnt this work
+     */
+
+    .container {
+        width: 90%;
+        max-width: 1440px;
+    }
+
+    .boxes {
+        flex-direction: row;
+    }
+
+    .karma span {
+        display: inline;
+    }
+
+    .calculator span {
+        display: inline;
+    }
 }
